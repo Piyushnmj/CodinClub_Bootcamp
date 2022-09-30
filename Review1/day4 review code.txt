@@ -1,0 +1,88 @@
+mkdir -p c:/users/piyush/onedrive/desktop/Backup/Main
+if [ -d "Backup/Main" ]
+then
+    echo "Folder Exists"
+fi
+
+for x in `ls | grep *.java`
+do
+        javaFileName=`echo $x | awk -F. '{ print $2 }'`
+        if [ -d $javaFilename ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$javaFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$javaFileName
+
+        addFileName=`echo $x | awk -F. '{ print $1 }'`
+        if [ -d $addFileName ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$javaFileName/$addFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$javaFileName/$addFileName
+        cp -r $x c:/users/piyush/onedrive/desktop/Backup/Main/$javaFileName/$addFileName
+done
+
+
+for x in `ls | grep *.py`
+do
+        pyFileName=`echo $x | awk -F. '{ print $2 }'`
+        if [ -d $pyFilename ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$pyFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$pyFileName
+
+        subFileName=`echo $x | awk -F. '{ print $1 }'`
+        if [ -d $subFileName ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$pyFileName/$subFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$pyFileName/$subFileName
+        cp -r $x c:/users/piyush/onedrive/desktop/Backup/Main/$pyFileName/$subFileName
+done
+
+for x in `ls | grep *.js`
+do
+        jsFileName=`echo $x | awk -F. '{ print $2 }'`
+        if [ -d $jsFilename ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$jsFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$jsFileName
+
+        multiplyFileName=`echo $x | awk -F. '{ print $1 }'`
+        if [ -d $multiplyFileName ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$jsFileName/$multiplyFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$jsFileName/$multiplyFileName
+        cp -r $x c:/users/piyush/onedrive/desktop/Backup/Main/$jsFileName/$multiplyFileName
+done
+
+for x in `ls | grep *.html`
+do
+        htmlFileName=`echo $x | awk -F. '{ print $2 }'`
+        if [ -d $htmlFilename ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$htmlFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$htmlFileName
+
+        divisionFileName=`echo $x | awk -F. '{ print $1 }'`
+        if [ -d $divisionFileName ]
+        then
+             echo "Folder Exists"
+             rm -rf c:/users/piyush/onedrive/desktop/Backup/Main/$htmlFileName/$divisionFileName
+        fi
+        mkdir c:/users/piyush/onedrive/desktop/Backup/Main/$htmlFileName/$divisionFileName
+        cp -r $x c:/users/piyush/onedrive/desktop/Backup/Main/$htmlFileName/$divisionFileName
+done
+
+

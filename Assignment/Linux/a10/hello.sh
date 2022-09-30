@@ -1,0 +1,7 @@
+echo "Hello"
+if [ $? -eq 0 ]
+then
+	echo "Command executed successfully"
+else
+	echo "Command Failed"
+fi

@@ -1,0 +1,18 @@
+function operation() {
+              echo $(($1+$2))
+     }
+
+     result1="$(operation 76 25)"
+     result2="$(operation 100 2)"
+
+     if [ $result1 -le 100 ]
+     then
+     	    echo "Condition Matches"
+     else
+          echo "Condition Not Matches"
+     fi
+
+     if [ $result2 -gt 100 ]
+     then
+          echo "Condition Matches"
+     fi

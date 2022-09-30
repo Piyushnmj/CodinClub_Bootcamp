@@ -1,0 +1,1 @@
+echo "Random Number is $((RANDOM%6))"

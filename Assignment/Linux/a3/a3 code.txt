@@ -1,0 +1,66 @@
+echo "List of files to rename - abc.log, def.log, ghi.log, jkl.log, mno.log"
+
+for x in `ls | grep abc*`
+do
+        File=`echo $x | awk -F. '{ print $1 }'`
+        Date=$(date +%d%m%Y)
+        echo "Today's Date is" $(date +%d%m%Y)
+        if [ $File ]
+        then
+                mv $x $File-$Date.log
+        fi
+done
+
+echo "abc file renamed successfully"
+
+for x in `ls | grep def*`
+do
+        File=`echo $x | awk -F. '{ print $1 }'`
+        Date=$(date +%d%m%Y)
+        echo "Today's Date is" $(date +%d%m%Y)
+        if [ $File ]
+        then
+                mv $x $File-$Date.log
+        fi
+done
+
+echo "def file renamed successfully"
+
+for x in `ls | grep ghi*`
+do
+        File=`echo $x | awk -F. '{ print $1 }'`
+        Date=$(date +%d%m%Y)
+        echo "Today's Date is" $(date +%d%m%Y)
+        if [ $File ]
+        then
+                mv $x $File-$Date.log
+        fi
+done
+
+echo "ghi file renamed successfully"
+
+for x in `ls | grep jkl*`
+do
+        File=`echo $x | awk -F. '{ print $1 }'`
+        Date=$(date +%d%m%Y)
+        echo "Today's Date is" $(date +%d%m%Y)
+        if [ $File ]
+        then
+                mv $x $File-$Date.log
+        fi
+done
+
+echo "jkl file renamed successfully"
+
+for x in `ls | grep mno*`
+do
+        File=`echo $x | awk -F. '{ print $1 }'`
+        Date=$(date +%d%m%Y)
+        echo "Today's Date is" $(date +%d%m%Y)
+        if [ $File ]
+        then
+                mv $x $File-$Date.log
+        fi
+done
+
+echo "mno file Renamed Successfully"

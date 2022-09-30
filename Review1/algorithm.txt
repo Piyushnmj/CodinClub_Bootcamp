@@ -1,0 +1,23 @@
+STEP 1:
+Create a folder and a sub-folder named Backup and Main in the Desktop.
+
+STEP 2:
+We have 4 files add.java, sub.py, multiply.js and division.html.
+First let us program a script add.java.
+For this we need to filter all the specific files present in the given folder.
+example- add.java
+
+STEP 3:
+Find a name of extension of the file and create a folder with the file extension name.
+example- folder created "Java". 
+
+STEP 4:
+Find a name of that file and create a sub-folder within the extension folder name.
+example- "Java/add"
+
+STEP 5:
+Move the file into that specific sub-folder
+example- "Java/add/add.java"
+
+STEP 6:
+Repeat step 2 to step 5 for all the other files.
